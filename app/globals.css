@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: #0f1117;
+  --panel: #161b27;
+  --border: #1e2535;
+  --accent: #4f8ef7;
+  --warn: #f5a623;
+  --critical: #e85d5d;
+  --success: #4caf82;
+  --muted: #5a6480;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: var(--surface);
+  color: #e2e8f0;
+  font-family: 'DM Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+/* Severity badges */
+.badge-high {
+  background: rgba(232, 93, 93, 0.12);
+  color: #e85d5d;
+  border: 1px solid rgba(232, 93, 93, 0.25);
+}
+.badge-medium {
+  background: rgba(245, 166, 35, 0.12);
+  color: #f5a623;
+  border: 1px solid rgba(245, 166, 35, 0.25);
+}
+.badge-low {
+  background: rgba(79, 142, 247, 0.12);
+  color: #4f8ef7;
+  border: 1px solid rgba(79, 142, 247, 0.25);
+}
+
+/* Card */
+.card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+
+/* Pulse dot */
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.85); }
+}
+.pulse-dot {
+  animation: pulse-dot 2s ease-in-out infinite;
+}

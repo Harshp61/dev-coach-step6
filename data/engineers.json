@@ -1,0 +1,530 @@
+{
+  "teams": [
+    {
+      "id": "team-payments",
+      "name": "Payments Core",
+      "manager": "sarah.chen@company.com"
+    },
+    {
+      "id": "team-risk",
+      "name": "Risk & Compliance",
+      "manager": "james.okafor@company.com"
+    }
+  ],
+  "engineers": [
+    {
+      "id": "eng-001",
+      "name": "Sarah Chen",
+      "email": "sarah.chen@company.com",
+      "jobTitle": "Staff Engineer",
+      "team": "Payments Core",
+      "teamId": "team-payments",
+      "role": "manager",
+      "maturityLevel": 4,
+      "kpis": {
+        "ticketCycleTime": 38,
+        "deploymentFrequency": 3,
+        "changeFailureRate": 8,
+        "aiCodingToolAdoption": 82,
+        "automatedDeployment": 91,
+        "policyExceptions": 1
+      },
+      "sprintSummary": {
+        "storiesCommitted": 12,
+        "storiesCompleted": 11,
+        "velocity": 91,
+        "testCoverageStart": 78,
+        "testCoverageEnd": 83,
+        "buildFailures": 1,
+        "productionIncidents": 0,
+        "commitsMissingTicketLinks": 1
+      },
+      "todayActivity": {
+        "activePRs": [
+          {
+            "title": "feat: add idempotency keys to payment retry logic",
+            "hoursOpen": 5,
+            "reviewersCount": 2,
+            "testsIncluded": true,
+            "businessImpact": "Prevents duplicate charges on network timeout"
+          }
+        ],
+        "commits": [
+          {
+            "message": "refactor: extract payment processor interface",
+            "hasTicketReference": true
+          }
+        ],
+        "aiUsageMinutes": 48,
+        "testsWrittenToday": 6,
+        "codeReviewsGivenToday": 3
+      },
+      "teamSummary": {
+        "medianMaturityLevel": 2,
+        "velocityTrend": [72, 80, 88],
+        "blockedEngineers": [
+          {
+            "name": "Priya Nair",
+            "reason": "PR open 40h, no reviewer assigned"
+          },
+          {
+            "name": "Leo Marchetti",
+            "reason": "3 consecutive build failures blocking merge"
+          }
+        ],
+        "topCoachingActions": [
+          "Encourage Leo to run tests locally before pushing to CI",
+          "Pair Priya with a senior reviewer to unblock her PR",
+          "Review AI tool usage across team — 3 members below 60%"
+        ]
+      }
+    },
+    {
+      "id": "eng-002",
+      "name": "Marcus Williams",
+      "email": "marcus.williams@company.com",
+      "jobTitle": "Senior Software Engineer",
+      "team": "Payments Core",
+      "teamId": "team-payments",
+      "role": "individual_contributor",
+      "maturityLevel": 3,
+      "kpis": {
+        "ticketCycleTime": 42,
+        "deploymentFrequency": 2,
+        "changeFailureRate": 10,
+        "aiCodingToolAdoption": 74,
+        "automatedDeployment": 80,
+        "policyExceptions": 2
+      },
+      "sprintSummary": {
+        "storiesCommitted": 8,
+        "storiesCompleted": 7,
+        "velocity": 87,
+        "testCoverageStart": 72,
+        "testCoverageEnd": 76,
+        "buildFailures": 2,
+        "productionIncidents": 0,
+        "commitsMissingTicketLinks": 2
+      },
+      "todayActivity": {
+        "activePRs": [
+          {
+            "title": "fix: handle card network timeout in checkout flow",
+            "hoursOpen": 18,
+            "reviewersCount": 1,
+            "testsIncluded": true,
+            "businessImpact": "Reduces checkout abandonment on slow networks"
+          }
+        ],
+        "commits": [
+          {
+            "message": "fix: null check on payment method object",
+            "hasTicketReference": true
+          }
+        ],
+        "aiUsageMinutes": 55,
+        "testsWrittenToday": 4,
+        "codeReviewsGivenToday": 2
+      }
+    },
+    {
+      "id": "eng-003",
+      "name": "Priya Nair",
+      "email": "priya.nair@company.com",
+      "jobTitle": "Software Engineer II",
+      "team": "Payments Core",
+      "teamId": "team-payments",
+      "role": "individual_contributor",
+      "maturityLevel": 2,
+      "kpis": {
+        "ticketCycleTime": 61,
+        "deploymentFrequency": 1,
+        "changeFailureRate": 18,
+        "aiCodingToolAdoption": 55,
+        "automatedDeployment": 50,
+        "policyExceptions": 4
+      },
+      "sprintSummary": {
+        "storiesCommitted": 6,
+        "storiesCompleted": 4,
+        "velocity": 67,
+        "testCoverageStart": 55,
+        "testCoverageEnd": 57,
+        "buildFailures": 5,
+        "productionIncidents": 1,
+        "commitsMissingTicketLinks": 6
+      },
+      "todayActivity": {
+        "activePRs": [
+          {
+            "title": "feat: add 3DS authentication to card payments",
+            "hoursOpen": 40,
+            "reviewersCount": 0,
+            "testsIncluded": false,
+            "businessImpact": "Required for PSD2 compliance by Q3"
+          }
+        ],
+        "commits": [
+          {
+            "message": "wip changes",
+            "hasTicketReference": false
+          }
+        ],
+        "aiUsageMinutes": 22,
+        "testsWrittenToday": 0,
+        "codeReviewsGivenToday": 0
+      }
+    },
+    {
+      "id": "eng-004",
+      "name": "Leo Marchetti",
+      "email": "leo.marchetti@company.com",
+      "jobTitle": "Software Engineer II",
+      "team": "Payments Core",
+      "teamId": "team-payments",
+      "role": "individual_contributor",
+      "maturityLevel": 1,
+      "kpis": {
+        "ticketCycleTime": 78,
+        "deploymentFrequency": 0.5,
+        "changeFailureRate": 28,
+        "aiCodingToolAdoption": 30,
+        "automatedDeployment": 35,
+        "policyExceptions": 7
+      },
+      "sprintSummary": {
+        "storiesCommitted": 5,
+        "storiesCompleted": 2,
+        "velocity": 40,
+        "testCoverageStart": 30,
+        "testCoverageEnd": 30,
+        "buildFailures": 9,
+        "productionIncidents": 2,
+        "commitsMissingTicketLinks": 10
+      },
+      "todayActivity": {
+        "activePRs": [
+          {
+            "title": "fix: refund calculation rounding error",
+            "hoursOpen": 52,
+            "reviewersCount": 1,
+            "testsIncluded": false,
+            "businessImpact": "Incorrect refunds causing customer complaints"
+          }
+        ],
+        "commits": [
+          {
+            "message": "fixed stuff",
+            "hasTicketReference": false
+          }
+        ],
+        "aiUsageMinutes": 10,
+        "testsWrittenToday": 0,
+        "codeReviewsGivenToday": 0
+      }
+    },
+    {
+      "id": "eng-005",
+      "name": "Aisha Okonkwo",
+      "email": "aisha.okonkwo@company.com",
+      "jobTitle": "Senior Software Engineer",
+      "team": "Payments Core",
+      "teamId": "team-payments",
+      "role": "individual_contributor",
+      "maturityLevel": 3,
+      "kpis": {
+        "ticketCycleTime": 44,
+        "deploymentFrequency": 2,
+        "changeFailureRate": 11,
+        "aiCodingToolAdoption": 78,
+        "automatedDeployment": 75,
+        "policyExceptions": 1
+      },
+      "sprintSummary": {
+        "storiesCommitted": 9,
+        "storiesCompleted": 8,
+        "velocity": 89,
+        "testCoverageStart": 70,
+        "testCoverageEnd": 75,
+        "buildFailures": 2,
+        "productionIncidents": 0,
+        "commitsMissingTicketLinks": 1
+      },
+      "todayActivity": {
+        "activePRs": [
+          {
+            "title": "feat: webhook signature verification for payment events",
+            "hoursOpen": 10,
+            "reviewersCount": 2,
+            "testsIncluded": true,
+            "businessImpact": "Prevents forged payment event callbacks"
+          }
+        ],
+        "commits": [
+          {
+            "message": "feat(PAY-441): implement HMAC webhook verification",
+            "hasTicketReference": true
+          }
+        ],
+        "aiUsageMinutes": 60,
+        "testsWrittenToday": 5,
+        "codeReviewsGivenToday": 2
+      }
+    },
+    {
+      "id": "eng-006",
+      "name": "James Okafor",
+      "email": "james.okafor@company.com",
+      "jobTitle": "Staff Engineer",
+      "team": "Risk & Compliance",
+      "teamId": "team-risk",
+      "role": "manager",
+      "maturityLevel": 4,
+      "kpis": {
+        "ticketCycleTime": 40,
+        "deploymentFrequency": 2,
+        "changeFailureRate": 7,
+        "aiCodingToolAdoption": 85,
+        "automatedDeployment": 88,
+        "policyExceptions": 0
+      },
+      "sprintSummary": {
+        "storiesCommitted": 10,
+        "storiesCompleted": 10,
+        "velocity": 100,
+        "testCoverageStart": 80,
+        "testCoverageEnd": 85,
+        "buildFailures": 1,
+        "productionIncidents": 0,
+        "commitsMissingTicketLinks": 0
+      },
+      "todayActivity": {
+        "activePRs": [
+          {
+            "title": "feat: real-time fraud score aggregation pipeline",
+            "hoursOpen": 8,
+            "reviewersCount": 2,
+            "testsIncluded": true,
+            "businessImpact": "Reduces fraud losses by early transaction scoring"
+          }
+        ],
+        "commits": [
+          {
+            "message": "feat(RISK-210): add streaming fraud event consumer",
+            "hasTicketReference": true
+          }
+        ],
+        "aiUsageMinutes": 70,
+        "testsWrittenToday": 7,
+        "codeReviewsGivenToday": 4
+      },
+      "teamSummary": {
+        "medianMaturityLevel": 2,
+        "velocityTrend": [65, 70, 75],
+        "blockedEngineers": [
+          {
+            "name": "Daniel Park",
+            "reason": "Waiting on compliance sign-off for KYC changes"
+          }
+        ],
+        "topCoachingActions": [
+          "Help Daniel navigate compliance approval process proactively",
+          "Riya needs support improving test coverage — currently at 40%",
+          "Encourage Tom to adopt AI coding tools to speed up delivery"
+        ]
+      }
+    },
+    {
+      "id": "eng-007",
+      "name": "Riya Sharma",
+      "email": "riya.sharma@company.com",
+      "jobTitle": "Software Engineer II",
+      "team": "Risk & Compliance",
+      "teamId": "team-risk",
+      "role": "individual_contributor",
+      "maturityLevel": 1,
+      "kpis": {
+        "ticketCycleTime": 85,
+        "deploymentFrequency": 0.5,
+        "changeFailureRate": 32,
+        "aiCodingToolAdoption": 20,
+        "automatedDeployment": 25,
+        "policyExceptions": 9
+      },
+      "sprintSummary": {
+        "storiesCommitted": 5,
+        "storiesCompleted": 2,
+        "velocity": 40,
+        "testCoverageStart": 38,
+        "testCoverageEnd": 40,
+        "buildFailures": 11,
+        "productionIncidents": 3,
+        "commitsMissingTicketLinks": 12
+      },
+      "todayActivity": {
+        "activePRs": [
+          {
+            "title": "fix: AML rule threshold adjustment",
+            "hoursOpen": 62,
+            "reviewersCount": 0,
+            "testsIncluded": false,
+            "businessImpact": "Incorrect thresholds flagging legitimate transactions"
+          }
+        ],
+        "commits": [
+          {
+            "message": "updated thresholds",
+            "hasTicketReference": false
+          }
+        ],
+        "aiUsageMinutes": 8,
+        "testsWrittenToday": 0,
+        "codeReviewsGivenToday": 0
+      }
+    },
+    {
+      "id": "eng-008",
+      "name": "Daniel Park",
+      "email": "daniel.park@company.com",
+      "jobTitle": "Software Engineer III",
+      "team": "Risk & Compliance",
+      "teamId": "team-risk",
+      "role": "individual_contributor",
+      "maturityLevel": 2,
+      "kpis": {
+        "ticketCycleTime": 58,
+        "deploymentFrequency": 1,
+        "changeFailureRate": 17,
+        "aiCodingToolAdoption": 50,
+        "automatedDeployment": 55,
+        "policyExceptions": 5
+      },
+      "sprintSummary": {
+        "storiesCommitted": 7,
+        "storiesCompleted": 5,
+        "velocity": 71,
+        "testCoverageStart": 58,
+        "testCoverageEnd": 62,
+        "buildFailures": 4,
+        "productionIncidents": 1,
+        "commitsMissingTicketLinks": 5
+      },
+      "todayActivity": {
+        "activePRs": [
+          {
+            "title": "feat: KYC document expiry notification service",
+            "hoursOpen": 30,
+            "reviewersCount": 1,
+            "testsIncluded": false,
+            "businessImpact": "Prevents expired docs causing compliance failures"
+          }
+        ],
+        "commits": [
+          {
+            "message": "RISK-198: add document expiry scheduler",
+            "hasTicketReference": true
+          }
+        ],
+        "aiUsageMinutes": 35,
+        "testsWrittenToday": 1,
+        "codeReviewsGivenToday": 1
+      }
+    },
+    {
+      "id": "eng-009",
+      "name": "Tom Eriksson",
+      "email": "tom.eriksson@company.com",
+      "jobTitle": "Software Engineer III",
+      "team": "Risk & Compliance",
+      "teamId": "team-risk",
+      "role": "individual_contributor",
+      "maturityLevel": 2,
+      "kpis": {
+        "ticketCycleTime": 53,
+        "deploymentFrequency": 1,
+        "changeFailureRate": 14,
+        "aiCodingToolAdoption": 42,
+        "automatedDeployment": 60,
+        "policyExceptions": 3
+      },
+      "sprintSummary": {
+        "storiesCommitted": 7,
+        "storiesCompleted": 6,
+        "velocity": 86,
+        "testCoverageStart": 62,
+        "testCoverageEnd": 66,
+        "buildFailures": 3,
+        "productionIncidents": 0,
+        "commitsMissingTicketLinks": 4
+      },
+      "todayActivity": {
+        "activePRs": [
+          {
+            "title": "feat: sanctions list screening batch job",
+            "hoursOpen": 22,
+            "reviewersCount": 1,
+            "testsIncluded": true,
+            "businessImpact": "Ensures regulatory compliance for cross-border payments"
+          }
+        ],
+        "commits": [
+          {
+            "message": "RISK-205: sanctions screening scheduler",
+            "hasTicketReference": true
+          }
+        ],
+        "aiUsageMinutes": 28,
+        "testsWrittenToday": 2,
+        "codeReviewsGivenToday": 1
+      }
+    },
+    {
+      "id": "eng-010",
+      "name": "Nina Patel",
+      "email": "nina.patel@company.com",
+      "jobTitle": "Senior Software Engineer",
+      "team": "Risk & Compliance",
+      "teamId": "team-risk",
+      "role": "individual_contributor",
+      "maturityLevel": 3,
+      "kpis": {
+        "ticketCycleTime": 46,
+        "deploymentFrequency": 2,
+        "changeFailureRate": 10,
+        "aiCodingToolAdoption": 70,
+        "automatedDeployment": 72,
+        "policyExceptions": 2
+      },
+      "sprintSummary": {
+        "storiesCommitted": 8,
+        "storiesCompleted": 7,
+        "velocity": 87,
+        "testCoverageStart": 68,
+        "testCoverageEnd": 73,
+        "buildFailures": 2,
+        "productionIncidents": 0,
+        "commitsMissingTicketLinks": 2
+      },
+      "todayActivity": {
+        "activePRs": [
+          {
+            "title": "feat: risk score explainability API for auditors",
+            "hoursOpen": 14,
+            "reviewersCount": 2,
+            "testsIncluded": true,
+            "businessImpact": "Enables auditor review of automated risk decisions"
+          }
+        ],
+        "commits": [
+          {
+            "message": "feat(RISK-212): add explainability endpoint with audit log",
+            "hasTicketReference": true
+          }
+        ],
+        "aiUsageMinutes": 52,
+        "testsWrittenToday": 4,
+        "codeReviewsGivenToday": 2
+      }
+    }
+  ]
+}
