@@ -38,6 +38,14 @@ function SeverityDot({ severity }: { severity: string }) {
 }
 
 export default function ManagerPage() {
+  return (
+    <div className="max-w-4xl mx-auto px-6 py-8">
+      <ManagerPageContent />
+    </div>
+  )
+}
+
+function ManagerPageContent() {
   const managers = getManagers()
 
   return (

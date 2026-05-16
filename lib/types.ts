@@ -75,3 +75,17 @@ export interface Insight {
   why: string
   severity: Severity
 }
+
+export type FixKind = 'snippet' | 'command' | 'patch' | 'checklist'
+
+export interface ImplementableFix {
+  id: string
+  title: string
+  description: string
+  kind: FixKind
+  content: string
+  language?: string
+  fileHint?: string
+  /** Line range to highlight in the mock editor (1-based, inclusive) */
+  highlightLines?: [number, number]
+}
